@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tann Trim - E-commerce Bag Store
 
-## Getting Started
+A modern, responsive e-commerce web application built with Next.js for selling bags and backpacks. Features include product browsing, cart management, wishlist functionality, and mobile-responsive design.
 
-First, run the development server:
+## 🚀 Technologies Used
 
+- **Next.js 16.0.1** - React framework with App Router
+- **React 19.2.0** - Frontend library
+- **Tailwind CSS 4** - Styling and responsive design
+- **Axios** - HTTP client for API calls
+- **React Icons** - Icon library
+- **REST API** - Product data management
+
+## ✨ Features
+
+- 📱 Fully responsive design (mobile, tablet, desktop)
+- 🛒 Shopping cart with quantity management
+- ❤️ Wishlist functionality
+- 🔍 Product browsing with category filters
+- 💰 Discount pricing display
+- 📱 Mobile hamburger menu
+- 🎨 Modern UI with Tailwind CSS
+
+## 🛠️ Getting Started
+
+### Prerequisites
+- Node.js 18+ installed
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd tann-trim
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/
+│   ├── api/products/          # REST API endpoints
+│   ├── components/            # React components
+│   │   ├── Header.jsx         # Navigation header
+│   │   ├── Products.jsx       # Product grid
+│   │   └── CategoryStrip.jsx  # Category navigation
+│   ├── context/               # React Context
+│   │   └── CartContext.js     # Cart & wishlist state
+│   ├── cart/                  # Cart page
+│   ├── wishlist/              # Wishlist page
+│   └── globals.css            # Global styles
+public/                        # Static assets (images)
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Deploy on Netlify
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Method 1: Git Integration
+1. Push your code to GitHub/GitLab
+2. Connect your repository to [Netlify](https://netlify.com)
+3. Set build command: `npm run build`
+4. Set publish directory: `.next`
+5. Deploy automatically on git push
 
-## Deploy on Vercel
+### Method 2: Manual Deploy
+1. Build the project:
+```bash
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Deploy the `.next` folder to Netlify
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Environment Variables
+No environment variables required for basic functionality.
+
+## 📱 Responsive Breakpoints
+
+- **Mobile**: < 640px (1 column)
+- **Tablet**: 640px - 1024px (2 columns)
+- **Desktop**: > 1024px (3-4 columns)
+
+## 🛒 API Endpoints
+
+- `GET /api/products` - Fetch all products
+
+## 🎨 Design Features
+
+- Mobile-first responsive design
+- Dark theme with modern aesthetics
+- Smooth hover animations
+- Intuitive user interface
+- Category-based navigation
+
+## 📄 License
+
+This project is for educational purposes.
